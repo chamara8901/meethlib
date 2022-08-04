@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: ".vuepress/public/"
+public_folder: "../../"
+display_url: https://cosmic-unicorn-c13e59.netlify.app
+collections:
+  - name: "doc" # Used in routes, e.g., /admin/collections/blog
+    label: "post" # Used in the UI
+    folder: "/documents/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    show_preview_links: true
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime", required: false}
+      - {label: "categories", name: "categories", widget: "list"}
