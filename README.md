@@ -3,7 +3,7 @@ home: true
 heroImage: /images/hero.png
 heroText: MeethDocuments
 actionText: Get Started →
-actionLink: /guide/
+actionLink: /documents/
 features:
 - title: Simplicity First
   details: Minimal setup with markdown-centered project structure helps you focus on writing.
